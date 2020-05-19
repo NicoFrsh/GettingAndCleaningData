@@ -1,12 +1,12 @@
 # Code Book (based on [the original codebook](https://github.com/NicoFrsh/GettingAndCleaningData/blob/master/UCI%20HAR%20Dataset/features_info.txt))
 
 A total of 30 subjects where tested doing different activities. In the raw data the results were distributed into two groups (Training and Testing group) containing three tables each:
-* X_<group>:
+* X_\<group\>:
   * measuring values tracked by the Smartphone (detailed description below)
-* subject_\\<group\\>:
-  * to the X_<group>-table corresponding subject ID
-* y_<group>:
-  * to the X_<group>-table corresponding activity key
+* subject_\<group\>:
+  * to the X_\<group\>-table corresponding subject ID
+* y_\<group\>:
+  * to the X_\<group\>-table corresponding activity key
  
 * subject (numeric): 
   * range of 1 to 30, each number representing one subject.
