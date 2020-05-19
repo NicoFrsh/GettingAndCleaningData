@@ -52,3 +52,10 @@ mergedTest <- cbind(subject_test, y_test, X_test)
 mergedData <- rbind(mergedTrain, mergedTest)
 rm(mergedTrain, mergedTest)
 
+# filter only mean and std variables
+regEx <- "min\\.+|std\\.+"
+meanstdcolumns <- grep(regEx, names(mergedData), value = TRUE)
+meanstdcolumns <- c("id","activity",meanstdcolumns)
+
+meanstddata <- mergedData[meanstdcolumns]
+
