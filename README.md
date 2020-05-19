@@ -7,3 +7,6 @@ This repo consists of the following files:
 * the CodeBook.md file which explains all the variables contained in the resulting tidy data set
 * the Rproj file
 * the run_analysis.R script where the raw data is transformed to the tidy data
+* the resulting tidydf.txt file computed by the R-Script
+
+The commented R-Script can be executed line by line to step by step deriving the tidy data set from the raw data. At last the tidy data is written to a .txt file.
