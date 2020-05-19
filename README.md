@@ -1,5 +1,5 @@
 # GettingAndCleaningData
-In this repo I took the raw data from [this link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and turned it to a tidy data set by merging all the relevant tables and cleaning the resulting data.
+In this repo I took the raw data from [this link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and turned it to a tidy data set by merging all the relevant tables and cleaning the resulting data. The resulting data can be used for further analysis.
 
 This repo consists of the following files:
 
