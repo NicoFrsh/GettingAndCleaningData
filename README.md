@@ -3,7 +3,7 @@ In this repo I took the raw data from [this link](http://archive.ics.uci.edu/ml/
 
 This repo consists of the following files:
 
--- the raw data used for the analysis in UCI HAR Dataset
--- the CodeBook.md file which explains all the variables contained in the resulting tidy data set
--- the Rproj file
--- the run_analysis.R script where the raw data is transformed to the tidy data
+* the raw data used for the analysis in UCI HAR Dataset
+* the CodeBook.md file which explains all the variables contained in the resulting tidy data set
+* the Rproj file
+* the run_analysis.R script where the raw data is transformed to the tidy data
