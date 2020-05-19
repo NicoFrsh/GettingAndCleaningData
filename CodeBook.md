@@ -1,4 +1,4 @@
-# Code Book (based on [the original codebook](https://github.com/NicoFrsh/GettingAndCleaningData/blob/master/UCI%20HAR%20Dataset/features_info.txt)
+# Code Book (based on [the original codebook](https://github.com/NicoFrsh/GettingAndCleaningData/blob/master/UCI%20HAR%20Dataset/features_info.txt))
 Feature Selection 
 =================
 
