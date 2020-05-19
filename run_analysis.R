@@ -43,7 +43,7 @@ mergedData <- rbind(mergedTrain, mergedTest)
 rm(mergedTrain, mergedTest)
 
 # filter only mean and std variables
-regEx <- "min\\.+|std\\.+"
+regEx <- "mean\\.+|std\\.+"
 meanstdcolumns <- grep(regEx, names(mergedData), value = TRUE)
 meanstdcolumns <- c("subject","activity",meanstdcolumns)
 
