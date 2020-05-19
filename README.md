@@ -1,5 +1,5 @@
 # GettingAndCleaningData
-In this repo I took the raw data from "Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013. " and turned it to a tidy data set by merging all the relevant tables and cleaning the resulting data.
+In this repo I took the raw data from [this link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and turned it to a tidy data set by merging all the relevant tables and cleaning the resulting data.
 
 This repo consists of the following files:
 
