@@ -11,7 +11,7 @@ A total of 30 subjects where tested doing different activities.
   * STANDING
   * LAYING
 
-Note that in the original raw data there were multiple observations for each subject and each activity, which I summarized by taking their average value for each variable.
+Note that in the original raw data there were multiple observations for each subject and each activity, which were summarized by taking their average value for each variable.
 
 Feature Selection 
 =================
