@@ -43,4 +43,12 @@ y_train$activity <- revalue(y_train$activity, c("1"="WALKING", "2"="WALKING_UPST
 y_test$activity <- factor(y_test$activity)
 y_test$activity <- revalue(y_test$activity, c("1"="WALKING", "2"="WALKING_UPSTAIRS", "3"="WALKING_DOWNSTAIRS",
                                                 "4"="SITTING","5"="STANDING","6"="LAYING"))
-# merge all tables based on 
+# merge all tables 
+# first add subject id and activity factor to X_train and X_test
+mergedTrain <- cbind(subject_train, y_train, X_train)
+mergedTest <- cbind(subject_test, y_test, X_test)
+
+# now merge both tables to one
+mergedData <- rbind(mergedTrain, mergedTest)
+rm(mergedTrain, mergedTest)
+
