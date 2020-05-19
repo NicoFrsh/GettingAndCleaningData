@@ -3,7 +3,7 @@
 A total of 30 subjects where tested doing different activities. In the raw data the results were distributed into two groups (Training and Testing group) containing three tables each:
 * X_<group>:
   * measuring values tracked by the Smartphone (detailed description below)
-* subject_<group>:
+* subject_\\<group\\>:
   * to the X_<group>-table corresponding subject ID
 * y_<group>:
   * to the X_<group>-table corresponding activity key
