@@ -1,4 +1,15 @@
 # Code Book (based on [the original codebook](https://github.com/NicoFrsh/GettingAndCleaningData/blob/master/UCI%20HAR%20Dataset/features_info.txt))
+
+A total of 30 subjects where tested doing different activities.
+* subject (numeric): range of 1 to 30, each number representing one subject.
+* activity (factor): 
+** WALKING
+** WALKING_UPSTAIRS
+** WALKING_DOWNSTAIRS
+** SITTING
+** STANDING
+** LAYING
+
 Feature Selection 
 =================
 
