@@ -10,7 +10,7 @@ A total of 30 subjects where tested doing different activities. In the raw data 
  
 To get a tidy data set the tables were merged by adding the subject ID and activity key columnwise to the beginning of the X_\<group\> tables for each group and finally binding the two resulting tables rowwise so that the result is **one** table containing the subject ID, the activity key and the measurements for both the training and the testing group. 
 
-To make the data set more handy the activity keys were transformed into factors according to the [original data raw documentation](https://github.com/NicoFrsh/GettingAndCleaningData/blob/master/UCI%20HAR%20Dataset/activity_labels.txt) which are more descriptive than the key values.
+To make the data set more handy the activity keys were transformed into factors according to the [original data raw documentation](https://github.com/NicoFrsh/GettingAndCleaningData/blob/master/UCI%20HAR%20Dataset/activity_labels.txt) which are more descriptive than the key values. Hence, the first to variables of the data set are:
 
 * subject (numeric): 
   * range of 1 to 30, each number representing one subject.
