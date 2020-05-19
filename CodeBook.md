@@ -3,12 +3,12 @@
 A total of 30 subjects where tested doing different activities.
 * subject (numeric): range of 1 to 30, each number representing one subject.
 * activity (factor): 
-** WALKING
-** WALKING_UPSTAIRS
-** WALKING_DOWNSTAIRS
-** SITTING
-** STANDING
-** LAYING
+  * WALKING
+  * WALKING_UPSTAIRS
+  * WALKING_DOWNSTAIRS
+  * SITTING
+  * STANDING
+  * LAYING
 
 Note that in the original raw data there were multiple observations for each subject and each activity, which I summarized by taking their average value for each variable.
 
