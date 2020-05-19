@@ -31,7 +31,7 @@ unique(y_train$V1)
 # might be the 6 different activities: WALKING, etc
 
 # rename subject and y table columns
-names(subject_train) <- "id"; names(subject_test) <- "id"
+names(subject_train) <- "subject"; names(subject_test) <- "subject"
 names(y_test) <- "activity"; names(y_train) <- "activity"
 
 # name activities
@@ -55,12 +55,12 @@ rm(mergedTrain, mergedTest)
 # filter only mean and std variables
 regEx <- "min\\.+|std\\.+"
 meanstdcolumns <- grep(regEx, names(mergedData), value = TRUE)
-meanstdcolumns <- c("id","activity",meanstdcolumns)
+meanstdcolumns <- c("subject","activity",meanstdcolumns)
 
 meanstddata <- mergedData[meanstdcolumns]
 
 # Create tidy data set with the average of each variable for each activity and each subject
 library(dplyr)
 tidydf <- tbl_df(meanstddata)
-tidydf <- tidydf %>% group_by(id, activity) %>%
+tidydf <- tidydf %>% group_by(subject, activity) %>%
         summarise_all(mean)
