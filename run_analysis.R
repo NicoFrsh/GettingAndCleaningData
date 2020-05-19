@@ -59,3 +59,8 @@ meanstdcolumns <- c("id","activity",meanstdcolumns)
 
 meanstddata <- mergedData[meanstdcolumns]
 
+# Create tidy data set with the average of each variable for each activity and each subject
+library(dplyr)
+tidydf <- tbl_df(meanstddata)
+tidydf <- tidydf %>% group_by(id, activity) %>%
+        summarise_all(mean)
