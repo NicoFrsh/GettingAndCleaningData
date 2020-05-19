@@ -13,6 +13,7 @@ subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt", header 
 
 # load test data
 X_test <- read.table("./UCI HAR Dataset/test/X_test.txt", header = FALSE, sep = "", col.names = names$V2)
+rm(names)
 
 y_test <- read.table("./UCI HAR Dataset/test/y_test.txt", header = FALSE)
 subject_test <- read.table("./UCI HAR Dataset/test/subject_test.txt", header = FALSE)
@@ -33,4 +34,13 @@ unique(y_train$V1)
 names(subject_train) <- "id"; names(subject_test) <- "id"
 names(y_test) <- "activity"; names(y_train) <- "activity"
 
+# name activities
+library(plyr)
+y_train$activity <- factor(y_train$activity)
+y_train$activity <- revalue(y_train$activity, c("1"="WALKING", "2"="WALKING_UPSTAIRS", "3"="WALKING_DOWNSTAIRS",
+                            "4"="SITTING","5"="STANDING","6"="LAYING"))
+
+y_test$activity <- factor(y_test$activity)
+y_test$activity <- revalue(y_test$activity, c("1"="WALKING", "2"="WALKING_UPSTAIRS", "3"="WALKING_DOWNSTAIRS",
+                                                "4"="SITTING","5"="STANDING","6"="LAYING"))
 # merge all tables based on 
