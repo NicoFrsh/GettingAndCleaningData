@@ -54,3 +54,6 @@ library(dplyr)
 tidydf <- tbl_df(meanstddata)
 tidydf <- tidydf %>% group_by(subject, activity) %>%
         summarise_all(mean)
+
+# write tidy data into txt file
+write.table(tidydf, file = "./tidydf.txt", row.names = FALSE)
